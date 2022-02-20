@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
+import {bgWrap} from '/styles/Home.module.css';
+import Head from 'next/head'
+import Image from 'next/image'
+
+
 
 export default function PrivatePage(props) {
   const [image, setImage] = useState(null);
@@ -26,7 +31,17 @@ export default function PrivatePage(props) {
 
   return (
     <div>
+      <div className={bgWrap}>
+        <Image
+          alt="travel"
+          src="/background.jpg"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
       <div>
+        
         <img src={createObjectURL} width="640" height="360"/>
         <h4>Select Image</h4>
         <input type="file" name="myImage" onChange={uploadToClient} />

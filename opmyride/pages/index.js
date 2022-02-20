@@ -3,11 +3,23 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
 
+import {bgWrap} from '../styles/Home.module.css';
+
+
+
 
 export default function Home() {
   return (
     <div>
-      
+      <div className={bgWrap}>
+        <Image
+          alt="travel"
+          src="/background.jpg"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
       <Head>
         <title>Boardbuddy Homepage</title>
         <meta name="description" content="A web-based board transcriber and translator" />
@@ -15,7 +27,7 @@ export default function Home() {
       </Head>
    
       
-     
+      
       <main className={styles.main}>
         
         <h1 className={styles.title}>
@@ -36,7 +48,7 @@ export default function Home() {
         </ul>
       
 
-      
+
       </main>
       
 
