@@ -34,7 +34,7 @@ export default function PrivatePage(props) {
       <div className={bgWrap}>
         <Image
           alt="travel"
-          src="/background.jpg"
+          src="/indexback.jpg"
           layout="fill"
           objectFit="cover"
           quality={100}
