@@ -14,7 +14,7 @@ export default function Home() {
       <div className={bgWrap}>
         <Image
           alt="travel"
-          src="/background.jpg"
+          src="/indexback.jpg"
           layout="fill"
           objectFit="cover"
           quality={100}
@@ -57,7 +57,8 @@ export default function Home() {
 
       
       <footer>
-      <a href="https://www.freepik.com/vectors/banner">Banner vector created by starline - www.freepik.com</a>
+      <a href="http://www.freepik.com">Designed by kjpargeter / Freepik</a>
+      
       </footer>
       
     </div>

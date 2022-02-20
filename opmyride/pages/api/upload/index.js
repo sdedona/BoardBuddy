@@ -29,3 +29,5 @@ export default async (req, res) => {
     })
     
 }
+
+//credit to Danny B. from FullStackSoup.blog for this tutorial viewable at https://fullstacksoup.blog/2021/11/04/next-js-upload-image-to-public-folder/

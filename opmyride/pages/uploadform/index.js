@@ -41,8 +41,9 @@ export default function PrivatePage(props) {
         />
       </div>
       <div>
-        
-        <img src={createObjectURL} width="640" height="360"/>
+      
+        <img src={createObjectURL} width="640" height="360" className="rounded-full"/>
+          
         <h4>Select Image</h4>
         <input type="file" name="myImage" onChange={uploadToClient} />
         <button
@@ -64,6 +65,12 @@ export default function PrivatePage(props) {
           </li>
           
         </ul>
+        
+
+      <footer>
+      <a href="https://www.freepik.com/vectors/banner">Banner vector created by starline - www.freepik.com</a>
+      </footer>
+
     </div>
   );
 }
