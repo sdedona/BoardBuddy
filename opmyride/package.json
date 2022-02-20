@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google-cloud/vision": "^2.4.2",
+    "@headlessui/react": "^1.5.0",
     "baseui": "^10.9.0",
     "css": "^3.0.0",
     "formidable": "^2.0.1",
