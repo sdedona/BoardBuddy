@@ -4,8 +4,6 @@ import styles from '../styles/Home.module.css'
 import Link from "next/link";
 
 
-
-
 export default function Home() {
   return (
     <div>
@@ -15,8 +13,9 @@ export default function Home() {
         <meta name="description" content="A web-based board transcriber and translator" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+   
       
-
+     
       <main className={styles.main}>
         
         <h1 className={styles.title}>
@@ -36,8 +35,14 @@ export default function Home() {
           
         </ul>
       
-        
+
+      
       </main>
+      
+
+
+      
+
       
       <footer>
       <a href="https://www.freepik.com/vectors/banner">Banner vector created by starline - www.freepik.com</a>
