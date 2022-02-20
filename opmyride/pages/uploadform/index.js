@@ -34,43 +34,34 @@ export default function PrivatePage(props) {
       <div className={bgWrap}>
         <Image
           alt="travel"
-          src="/indexback.jpg"
+          src="/background.jpg"
           layout="fill"
           objectFit="cover"
           quality={100}
         />
       </div>
       <div>
-      
-        <img src={createObjectURL} width="640" height="360" className="rounded-full"/>
-          
+      <center> 
+      <div class="col-sm-12 my-auto">
+        <img src={createObjectURL} width="640" height="360" className="imageUpload"/>
         <h4>Select Image</h4>
-        <input type="file" name="myImage" onChange={uploadToClient} />
-        <button
-          className="btn btn-primary"
-          type="submit"
-          onClick={uploadToServer}
-        >
-          Upload Image
-        </button>
-
-        
-
       </div>
-      <ul>
-          <li>
+      </center>
+        <center><div>
+          <label className="btn btn-primary" class="button-20" for="contained-button-file">
+              Choose File
+          </label>
+          <input type="file"  style={{ display: 'none' }} id="contained-button-file" onChange={uploadToClient} />
+
+        </div>
+        <button className="btn btn-primary" class="button-20" type="submit"onClick={uploadToServer}>Upload Image</button>
+        </center>
+        </div>
+        <center>
             <Link href="/loading">
-              <a>Transcribe Image</a>
+              <button class="button-20" role="button">Transcribe!</button>
             </Link>
-          </li>
-          
-        </ul>
-        
-
-      <footer>
-      <a href="https://www.freepik.com/vectors/banner">Banner vector created by starline - www.freepik.com</a>
-      </footer>
-
-    </div>
+            </center>
+      </div>
   );
 }

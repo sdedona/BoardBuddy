@@ -38,14 +38,9 @@ export default function Home() {
           Get started by uploading a board photo!
         </p>
 
-        <ul>
-          <li>
-            <Link href="/uploadform">
-              <a>Get Started</a>
+        <Link href="/uploadform">
+              <button class="button-20" role="button">Get Started!</button>
             </Link>
-          </li>
-          
-        </ul>
       
 
 
