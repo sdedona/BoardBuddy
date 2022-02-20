@@ -27,7 +27,7 @@ export default function PrivatePage(props) {
   return (
     <div>
       <div>
-        <img src={createObjectURL} />
+        <img src={createObjectURL} width="640" height="360"/>
         <h4>Select Image</h4>
         <input type="file" name="myImage" onChange={uploadToClient} />
         <button
