@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function PrivatePage(props) {
   const [image, setImage] = useState(null);
@@ -36,7 +37,18 @@ export default function PrivatePage(props) {
         >
           Upload Image
         </button>
+
+        
+
       </div>
+      <ul>
+          <li>
+            <Link href="/loading">
+              <a>Transcribe Image</a>
+            </Link>
+          </li>
+          
+        </ul>
     </div>
   );
 }

@@ -20,7 +20,8 @@ export default async (req, res) => {
             console.log(fields, files)
             console.log(files.file.filepath)
             var oldPath = files.file.filepath;
-            var newPath = `./public/images/${files.file.originalFilename}`;
+            var fileExtension = files.file.originalFilename.split('.').pop();
+            var newPath = `./public/images/${'uploadimg'+'.'+fileExtension}`;
             mv(oldPath, newPath, function(err) {
             });
             res.status(200).json({ fields, files })
