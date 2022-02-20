@@ -6,8 +6,9 @@ import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 
 
-export async function sendDataReq(context) {
-  const res = await fetch(`http://localhost:5000/api/blogPost`)
+export async function sendDataReq() {
+  const res = await fetch(`http://localhost:5000/data`)
+  console.log(res);
   
   
 }
@@ -28,22 +29,20 @@ export default function PrivatePage(props) {
   };
 
   const uploadToServer = async (event) => {
-    /*        
+          
     const body = new FormData();
     // console.log("file", image)
+    /*
     body.append("file", image);    
     const response = await fetch("/api/upload", {
       method: "POST",
       body
+    });*/
+    const response = await fetch("http://localhost:5000/data", {
+      method: "GET",
+      
     });
-
-    console.log(response);*/
-    const res = await fetch(`http://127.0.0.1:5000/data`);
-    console.log(res);
-    console.log(3);
-
-
-
+    console.log(response);
 
   };
 
@@ -72,7 +71,7 @@ export default function PrivatePage(props) {
           <input type="file"  style={{ display: 'none' }} id="contained-button-file" onChange={uploadToClient} />
 
         </div>
-        <button className="btn btn-primary" class="button-20" type="submit"onClick={sendDataReq}>Upload Image</button>
+        <button className="btn btn-primary" class="button-20" type="submit" onClick={uploadToServer}>Upload Image</button>
         </center>
         </div>
         <center>

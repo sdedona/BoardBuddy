@@ -3,6 +3,8 @@ import redirect from 'nextjs-redirect'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
+
+
 const Loading = () => {
     const router = useRouter();
     
@@ -11,6 +13,8 @@ const Loading = () => {
             router.push('/final');
         }, 3000)
     }, [])
+
+    
     
     return (<div>
         
